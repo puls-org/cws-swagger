@@ -1,5 +1,5 @@
 # Use the official Swagger UI image as the base image
-FROM swaggerapi/swagger-ui
+FROM swaggerapi/swagger-ui as prod
 
 # Copy your custom configuration file into the image
 COPY src/custom-config.js /usr/share/nginx/html/swagger-ui/custom-swagger-config.js
